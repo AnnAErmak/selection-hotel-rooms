@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  &__title{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
