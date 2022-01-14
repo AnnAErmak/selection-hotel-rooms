@@ -1,10 +1,10 @@
-.buttonBG {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 99px;
   height: 44px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: 2px solid #BC9CFF;
   border-radius: 22px;
   transition: 0.5s ease opacity;
   cursor: pointer;
@@ -12,10 +12,9 @@
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #BC9CFF;
   }
   &:hover{
     opacity: 0.5;
-
   }
 }
