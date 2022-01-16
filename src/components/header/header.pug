@@ -1,0 +1,23 @@
+include ../../formElements/buttons/button
+include ../../formElements/buttons/buttonBG
+header.header
+    .header-logo
+        a.header-logo__link(href="#")
+            img.header-logo__img(src=require("/src/components/header/img/logo.svg"))
+    nav
+        ul.nav
+            li.nav-item
+                a(href="#").nav-link.active О нас
+            li.nav-item.arrow
+                a(href="#").nav-link Услуги
+            li.nav-item
+                a(href="#").nav-link Вакансии
+            li.nav-item
+                a(href="#").nav-link Новости
+            li.nav-item.arrow
+                a(href="#").nav-link Соглашения
+    ul.controls
+        li.controls-item
+            +button("Войти")
+        li.controls-item
+            +buttonBG("Зарегистрироваться")

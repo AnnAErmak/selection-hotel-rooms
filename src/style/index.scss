@@ -1,37 +1,16 @@
 @import "global";
+@import "null";
+@import "src/components/header/header";
 @import "src/formElements/buttons/buttonBG";
 @import "src/formElements/buttons/button";
 @import "src/formElements/buttons/buttonLink";
 
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
+.wrapper{
+  margin: 0 auto;
+  max-width: 1920px;
 }
-*,*:before,*:after{
-  box-sizing: border-box;
-}
-:focus,:active{
-  outline: none;
-}
-html,body{
-  height: 100%;
-  width: 100%;
-  font-size: 14px;
-}
-body {
-  font-family: 'Montserrat', serif;
-  font-weight: 700;
-}
-a, a:visited{
-  text-decoration: none;
-}
-a:hover{
-  text-decoration: none;
-}
-ul li{
-  list-style: none;
-}
-button{
-  cursor: pointer;
+.container{
+  margin: 0 auto;
+  max-width: 1286px;
+  min-height: 120px;
 }

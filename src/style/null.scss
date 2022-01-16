@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+:focus,:active{
+  outline: none;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+a, a:visited{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
+button{
+  cursor: pointer;
+}
+nav, footer, header{
+  display: block;
+}
