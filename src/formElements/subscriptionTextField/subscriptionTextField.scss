@@ -1,0 +1,24 @@
+.subscription{
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  width: 267px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  &__input{
+    padding-left: 14px;
+    width: 223px;
+    height: 40px;
+    color: rgba(31, 32, 65, 0.25);
+  }
+  &__btn{
+    cursor: pointer;
+    width: 44px;
+    height: 40px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-image: url("/src/formElements/subscriptionTextField/img/arrow_forward.svg");
+    background-position: center;
+  }
+}

@@ -5,20 +5,20 @@ header{
   min-height: 70px;
 }
 
-nav{
+.nav{
   flex-basis:auto;
   flex-grow:1;
   display: flex;
   justify-content: flex-end;
   margin: 0 25px;
 }
-.nav{
+.menu{
   display:flex;
-  &-item:not(:last-child){
+  &__item:not(:last-child){
     margin: 0 23px 0 0;
   }
-  &-item{
-    &.arrow:after{
+  &__item{
+    &_arrow:after{
       content: '';
       margin: 0 0 0 8px;
       cursor: pointer;
@@ -26,25 +26,25 @@ nav{
       width: 12px;
       height: 8px;
       background-repeat: no-repeat;
-      background-image: url("/src/components/header/img/expand_more.svg"); /*url("img/expand_more.svg");*/
+      background-image: url("/src/components/header/img/expand_more.svg");
       background-size: cover;
     }
 
   }
-  &-link{
+  &__link{
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
     color: rgba(31, 32, 65, 0.5);
-  }
-    .active{
+    &_active{
       font-weight: 700;
       color: rgba(31, 32, 65, 0.75);
     }
+  }
 }
 .controls{
   display: flex;
-}
-.controls-item:first-child{
-  margin-right: 20px;
+  &__item:first-child{
+    margin-right: 20px;
+  }
 }

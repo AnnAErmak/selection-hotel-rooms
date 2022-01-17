@@ -1,0 +1,55 @@
+footer.footer
+    .footer-content
+        .footer-content__column
+            .logo.logo_margin
+                a.logo__link(href="/")
+                    img.logo__img(src=require("/src/components/footer/img/logo.svg"))
+            .text.text-footer-content__column
+                p.text__item Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .footer-content__column
+            .title.title_margin
+                p.title__text навигация
+            ul.footer-menu
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") О нас
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Новости
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Служба поддержки
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Услуги
+        .footer-content__column
+            .title.title_margin
+                p.title__text о нас
+            ul.footer-menu
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") О сервисе
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Наши команда
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Вакансии
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Инвесторы
+        .footer-content__column
+            .title.title_margin
+                p.title__text служба поддержки
+            ul.footer-menu
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Соглашения
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Сообщества
+                li.footer-menu__item
+                    a.footer-menu__link(href="#") Связь с нами
+        .footer-content__column
+            .title.title_margin
+                p.title__text Подписка
+            .text.text-width
+                p.text__item Получайте специальные предложения и новости сервиса
+            include ../../formElements/subscriptionTextField/subscriptionTextField
+    .copyright
+        .text.text_lh
+    p.text__item Copyright © 2018 Toxin отель. Все права защищены.
+        .icons
+            img.icons__item(src=require("/src/components/footer/img/twitter.svg"))
+            img.icons__item(src=require("/src/components/footer/img/facebook.svg"))
+            img.icons__item(src=require("/src/components/footer/img/instagramm.svg"))

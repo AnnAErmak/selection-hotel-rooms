@@ -1,23 +1,23 @@
 include ../../formElements/buttons/button
 include ../../formElements/buttons/buttonBG
 header.header
-    .header-logo
-        a.header-logo__link(href="#")
-            img.header-logo__img(src=require("/src/components/header/img/logo.svg"))
-    nav
-        ul.nav
-            li.nav-item
-                a(href="#").nav-link.active О нас
-            li.nav-item.arrow
-                a(href="#").nav-link Услуги
-            li.nav-item
-                a(href="#").nav-link Вакансии
-            li.nav-item
-                a(href="#").nav-link Новости
-            li.nav-item.arrow
-                a(href="#").nav-link Соглашения
+    .logo
+        a.logo__link(href="/")
+            img.logo__img(src=require("/src/components/header/img/logo.svg"))
+    nav.nav
+        ul.menu
+            li.menu__item
+                a(href="#").menu__link.menu__link_active О нас
+            li.menu__item.menu__item_arrow
+                a(href="#").menu__link Услуги
+            li.menu__item
+                a(href="#").menu__link Вакансии
+            li.menu__item
+                a(href="#").menu__link Новости
+            li.menu__item.menu__item_arrow
+                a(href="#").menu__link Соглашения
     ul.controls
-        li.controls-item
+        li.controls__item
             +button("Войти")
-        li.controls-item
+        li.controls__item
             +buttonBG("Зарегистрироваться")
