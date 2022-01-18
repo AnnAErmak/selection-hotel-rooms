@@ -15,6 +15,25 @@
       background-color: $darkShade25;
     }
   }
+  @media (max-width: 1024px){
+    .footer-content{
+      display: none;
+    }
+    .copyright{
+      min-height: 442px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo_disable{
+      display: block;
+      margin-bottom: 20px;
+    }
+   .text_lh{
+     margin-bottom: 20px;
+   }
+  }
 }
 .text{
   &__item{
@@ -24,6 +43,9 @@
 }
 .logo_margin{
   margin-bottom: 24px;
+}
+.logo_disable{
+  display: none;
 }
 .text-footer-content__column{
   width: 254px;

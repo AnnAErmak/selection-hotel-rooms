@@ -15,4 +15,8 @@
   margin: 0 auto;
   max-width: 1286px;
   min-height: 120px;
+  @media (max-width: 1300px){
+  padding: 0 15px;
+  }
+
 }

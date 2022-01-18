@@ -47,8 +47,11 @@ footer.footer
                 p.text__item Получайте специальные предложения и новости сервиса
             include ../../formElements/subscriptionTextField/subscriptionTextField
     .copyright
+        .logo.logo_disable
+            a.logo__link(href="/")
+                img.logo__img(src=require("/src/components/footer/img/logo.svg"))
         .text.text_lh
-    p.text__item Copyright © 2018 Toxin отель. Все права защищены.
+            p.text__item Copyright © 2018 Toxin отель. Все права защищены.
         .icons
             img.icons__item(src=require("/src/components/footer/img/twitter.svg"))
             img.icons__item(src=require("/src/components/footer/img/facebook.svg"))
