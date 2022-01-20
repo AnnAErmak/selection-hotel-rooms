@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.16.8",
+    "air-datepicker": "^3.1.0",
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
@@ -31,5 +32,8 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

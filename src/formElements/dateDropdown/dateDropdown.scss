@@ -1,0 +1,123 @@
+
+.dateDropdown{
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  &__label{
+    display: flex;
+    h3{
+      margin:0 30px;
+    }
+  }
+  &__item{
+    padding-left: 14px ;
+    padding-right: 16px ;
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    background-image: url("/src/formElements/dateDropdown/img/expand_more.svg");
+    background-repeat: no-repeat;
+    background-position: 117px;
+  }
+  &__item:nth-child(2){
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  &__item:last-child{
+    margin-right: 30px;
+  }
+  &__datepicker-global{
+    width: 0;
+  }
+}
+///////////////////Стили календаря////////////////////
+.air-datepicker--pointer{
+  display: none;
+}
+.air-datepicker-nav--action svg path{
+  fill: none;
+  stroke: none;
+  stroke-width: 0
+}
+.air-datepicker-nav--action[data-action="next"]{
+  svg{
+  background-image: url("/src/formElements/dateDropdown/img/arrow_forward.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+}
+
+.air-datepicker-nav--action[data-action="prev"]{
+  svg{
+    background-image: url("/src/formElements/dateDropdown/img/arrow_back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.air-datepicker-body--day-names{
+  .air-datepicker-body--day-name{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BC9CFF;
+    text-transform: none;
+  }
+}
+.air-datepicker-cell{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.air-datepicker-body{
+  .air-datepicker-cell.-day-.-other-month-{
+    color: rgba(31, 32, 65, 0.25);
+  }
+  .air-datepicker-cell.-current-{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    color: #FFFFFF;
+  }
+  .air-datepicker-cell.-selected-{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    &:before{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      z-index: -1;
+      background: rgba(188, 156, 255, 1);
+      border-radius: 22px;
+
+    }
+  }
+  .air-datepicker-cell.-range-from-{
+    background: linear-gradient(to right, #FFF 50%, #BC9CFF 0%, rgba(139, 164, 249, 0.25) 50%);
+  }
+  .air-datepicker-cell.-range-to-{
+    background: linear-gradient(to left, #FFF 50%, #BC9CFF 0%, rgba(139, 164, 249, 0.25) 50%);
+  }
+  .air-datepicker-cell.-in-range-{
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    //opacity: 0.25;
+  }
+}
+/////////////Кнопки в календаре//////////////
+
+.air-datepicker-button span {
+  text-transform: uppercase;
+  color: #BC9CFF;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+
+
+
+

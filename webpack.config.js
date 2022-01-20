@@ -8,19 +8,35 @@ if(process.env.NODE_ENV === 'production') {
 
 module.exports = {
     mode: mode,
+    entry: {
+        index: './src/index.js',
+        search: './src/searchRoom.js',
+        datePicker: './src/formElements/dateDropdown/dateDropdown.js',
+    },
     output: {
         filename: '[name].[contenthash].js',
         assetModuleFilename: "assets/[hash][ext][query]",
         clean: true,
     },
     devtool: 'source-map',
+    optimization: {
+        splitChunks: {
+            chunks: "all",
+        }
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-        template: "./src/index.pug"
-    })],
+            filename: "index.html",
+            template: "./src/index.pug"
+    }),
+        new HtmlWebpackPlugin({
+            filename: "searchRoom.html",
+            template: "./src/searchRoom.pug"
+        }),
+    ],
     module: {
         rules: [
             {

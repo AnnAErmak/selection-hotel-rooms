@@ -5,18 +5,55 @@
 @import "src/formElements/buttons/button";
 @import "src/formElements/buttons/buttonBG";
 @import "src/formElements/buttons/buttonLink";
+@import "src/formElements/dateDropdown/dateDropdown";
+@import "src/formElements/cards/roomSelection/roomSelection";
 @import "src/formElements/subscriptionTextField/subscriptionTextField";
+
 
 .wrapper{
   margin: 0 auto;
   max-width: 1920px;
+  height: 100%;
 }
 .container{
   margin: 0 auto;
   max-width: 1286px;
-  min-height: 120px;
+
   @media (max-width: 1300px){
   padding: 0 15px;
   }
+}
+.container_flex{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex: 1 1 auto;
+  background-image: url("/src/imageMain.png");
+  //background-size:  cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.title{
+  &__text{
+    text-transform: uppercase;
+    color:$darkShade100;
+  }
+}
+h3{
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
 
+.air-datepicker-nav--title{
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #1F2041;
 }
